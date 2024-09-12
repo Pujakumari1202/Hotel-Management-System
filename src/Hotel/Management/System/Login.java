@@ -75,7 +75,7 @@ public class Login extends JFrame implements ActionListener {
         if(e.getSource()==b1){
 
         }else {
-           System.exit(101);
+           System.exit(108);
         }
 
     }
