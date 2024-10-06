@@ -5,6 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 
 public class Login extends JFrame implements ActionListener {
     JTextField textField1;
@@ -73,9 +74,27 @@ public class Login extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==b1){
+                try{
+                    con c=new con();
+                    String user=textField1.getText();
+                    String pass =passwordField1.getText();
+
+
+                    String q="select *from login where username='"+user+"' and password='"+pass+"'";
+                   ResultSet resultSet=c.statement.executeQuery(q);
+                    if(resultSet.next()){
+                        new Dashboard();
+                        setVisible(false);
+                    }else {
+
+                        JOptionPane.showMessageDialog(null, "Invalid");
+                    }
+                }catch(Exception E){
+                    E.printStackTrace();
+                }
 
         }else {
-           System.exit(108);
+           System.exit(102);
         }
 
     }

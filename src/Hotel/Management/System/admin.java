@@ -78,6 +78,7 @@ public class admin extends JFrame implements ActionListener {
 
 
 
+
         getContentPane().setBackground(new Color(3,45,48));
         setLayout(null);
         setSize(1950,1090);
@@ -91,9 +92,10 @@ public class admin extends JFrame implements ActionListener {
             new AddEmployee();
 
         }else if (e.getSource()==add_Room){
-           // new AddRoom();
+           new AddRoom();
 
         }else if (e.getSource()== add_Drivers){
+            new addDriver();
 
         }else if (e.getSource()==logout){
             System.exit(102);
