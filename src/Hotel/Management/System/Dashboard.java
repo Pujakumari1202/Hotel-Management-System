@@ -61,6 +61,8 @@ public class Dashboard  extends JFrame implements ActionListener {
             setVisible(false);
 
         }else{
+            new Login2();
+            setVisible(false);
 
         }
 
