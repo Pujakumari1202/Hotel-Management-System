@@ -3,13 +3,13 @@ package Hotel.Management.System;
 import net.proteanit.sql.DbUtils;
 
 import javax.swing.*;
-        import java.awt.*;
-        import java.awt.event.ActionEvent;
+import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 
 public class PickUp extends JFrame {
-    PickUp(){
+    public PickUp(){
 
         JPanel panel = new JPanel();
         panel.setBackground(new Color(3,45,48));
@@ -33,8 +33,10 @@ public class PickUp extends JFrame {
         c.setBounds(123,94,150,25);
         panel.add(c);
 
+
         try{
             con C = new con();
+            //write the direct  query
             ResultSet resultSet = C.statement.executeQuery("select * from driver");
             while (resultSet.next()){
                 c.add(resultSet.getString("carname"));

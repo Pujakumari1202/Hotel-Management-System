@@ -141,7 +141,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
-
+                //    new CheckOut();
                 }catch (Exception E){
                     E.printStackTrace();
                 }
@@ -157,7 +157,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
-
+                    new UpdateCheck();
                 }catch (Exception E){
                     E.printStackTrace();
                 }
@@ -173,7 +173,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try{
-
+                   //new UpdateRoom();
                 }catch (Exception E){
                     E.printStackTrace();
                 }
