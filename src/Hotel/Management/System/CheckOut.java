@@ -134,7 +134,6 @@ public class CheckOut extends JFrame {
         });
 
 
-
         setUndecorated(true);
         setLayout(null);
         setSize(800,400);
