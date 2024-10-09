@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Reception extends JFrame {
-    Reception(){
+    public Reception(){
         JPanel panel = new JPanel();
         panel.setLayout(null);
         panel.setBounds(280,5,1238,820);
